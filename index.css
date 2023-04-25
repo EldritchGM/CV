@@ -1,0 +1,215 @@
+body {
+    font-family: Arial;
+    margin-left: 5%;
+}
+
+body.dark {
+    background-color: #000008;
+    color: #eeeeff;
+}
+
+body.light {
+    background-color: #fffffe;
+    color: #181800
+}
+
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 300%;
+    text-align: center;
+}
+
+h3 {
+    text-align: right;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0%;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1cm;
+    padding-top: 2mm;
+    height: 5%;
+}
+
+address {
+    display: flex;
+    font-style: normal;
+}
+
+address a {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    
+}
+
+address div {
+    flex:1;
+}
+
+
+@keyframes fancy_hr {
+    from {
+        opacity: 100%;
+        width: 30%;
+    }
+    to {
+        opacity: 100%;
+        width: 90%;
+    }
+}
+
+
+
+hr {
+    animation-name: fancy_hr;
+    animation-duration: 3s;
+    animation-play-state: paused;
+    width: 90%;
+    margin-left: 0;
+}
+
+@keyframes paragraph_display {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.container {
+    animation-name: paragraph_display;
+    animation-duration: 2s;
+    animation-play-state: paused;
+    position: relative;
+}
+
+.section hr {
+    margin-left: 0;
+}
+
+.section {
+    width: 90%;
+}
+
+.container {
+    display: none;
+}
+
+main {
+    margin-bottom: 6%;
+}
+
+footer img {
+    width: 1em;
+    height: 1em;
+}
+
+table {
+    border: none;
+}
+
+#langues td {
+    padding-right: 6cm;
+    padding-left: 1cm;
+}
+
+#competences td {
+    padding-right: 2cm;
+    padding-left: 0.5cm;
+}
+
+#formation td {
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+
+#formation .head {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#formation tr {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10cm;
+    border-bottom: 10cm;
+    padding-bottom: 10cm;
+}
+
+ul {
+    list-style-type: "⬩";
+    list-style-position: outside;
+}
+
+li {
+    text-indent: 5mm;
+}
+
+tr {
+    border-left: 2mm;
+}
+
+.space {
+    height: 1cm;
+}
+
+li table {
+    text-indent: 1cm;
+}
+
+.star {
+    color: gold;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.case {
+    font-weight: bold;
+}
+
+.detail {
+    text-indent: 1cm;
+}
+
+#dark_light {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#dark_light img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#dark_light:hover {
+    cursor: pointer;
+}
+
+img.light {
+    filter: invert(1);
+}
